@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(177.9deg, rgb(58, 62, 88) 3.6%, rgb(119, 127, 148) 105.8%);
+}
+
+.box-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 28%;
+    height: 56%;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: -4px 4px 4px 0px rgba(0,0,0,0.64);
+}
+
+.img-perfil{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    border-color: rgb(95, 93, 93);
+    border-width: 5%;
+}
+
+.nome{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2vw;
+    font-weight: bold;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descricao{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2vw;
+    align-items: center;
+    font-weight: 500;
+    text-align: center;
+}
+
+.seguir-perfil{
+    width: 20vw;
+    height: 2vw;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    color: rgb(65, 61, 61);
+    font-weight: 600;
+    font-family: "Helvetica";
+    font-size: 80%;
+    background-color: rgba(245, 245, 245, 0.986);
+}
+
+.box-layout{
+    border-radius: 16px;
+    width: 56%;
+    height: 72%;
+    background-color: white;
+    box-shadow: -4px 4px 4px 0px rgba(0,0,0,0.64);
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+.box-layout::-webkit-scrollbar {
+    width: 12px;
+}
+  
+.box-layout::-webkit-scrollbar-track {
+    background: rgb(247, 246, 244);
+    border-radius: 0px 16px 16px 0px;
+}
+  
+.box-layout::-webkit-scrollbar-thumb {
+    background-color: rgb(159, 159, 165);   
+    border-radius: 20px;      
+}
+
+li{
+    background-color: rgba(245, 245, 245, 0.986);
+    border-radius: 16px;
+    width: 40%;
+    height: 28%;
+    margin: 4%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    padding: 16px;
+}
+
+h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 80%;
+    font-weight: bold;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    *{
+        overflow-y: visible;
+    }
+
+    body{
+        flex-direction: column;
+    }
+
+    .box-profile{
+        width: 40%;
+        height: 32%;
+    }
+
+    .box-layout{
+        width: 56%;
+        height: 56%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    *{
+        overflow-y: visible;
+    }
+
+    body{
+        flex-direction: column;
+    }
+
+    .box-profile{
+        width: 80%;
+        height: 32%;
+    }
+
+    .box-layout{
+        width: 88%;
+        height: 56%;
+        flex-direction: column;
+    }
+}
