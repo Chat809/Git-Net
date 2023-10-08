@@ -95,7 +95,7 @@ li{
     background-color: rgba(245, 245, 245, 0.986);
     border-radius: 16px;
     width: 40%;
-    height: 20%;
+    height: 18%;
     margin: 4%;
     display: flex;
     justify-content: space-around;
@@ -114,6 +114,17 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2vw;
+    font-weight: bold;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
 }
 
 @media screen and (max-width: 767px) {
