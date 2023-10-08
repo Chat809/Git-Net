@@ -1,6 +1,7 @@
-const reposData = JSON.parse(localStorage.getItem('reposData'));
+let reposData = JSON.parse(localStorage.getItem('reposData'));
+let userData = JSON.parse(localStorage.getItem('userData'));
 
-if (Array.isArray(reposData)) {
+if (reposData) {
     const ul = document.querySelector('ul');
 
     reposData.forEach(item => {
@@ -10,4 +11,13 @@ if (Array.isArray(reposData)) {
     });
 } else {
     console.log('Nenhum dado de repositório disponível.');
+}
+
+if (userData) {
+    document.getElementById("imagem-perfil").src = userData.avatar_url;
+    document.getElementById("urlUser").href = userData.html_url;
+    document.getElementById("descricao").textContent = userData.bio || "Usuário do GitHub";
+    document.getElementById("nomeUser").textContent = userData.login;
+} else {
+    console.log('Nenhum dado de usuário disponível.');
 }

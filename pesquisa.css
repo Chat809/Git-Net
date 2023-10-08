@@ -45,3 +45,16 @@ body{
     padding-left: 1.5vh;
     box-shadow: -4px 4px 4px 0px rgba(0,0,0,0.64);
 }
+
+.botao-pesquisa{
+    width: 8vw;
+    height: 2vw;
+    margin: 2vh;
+    border-radius: 0.4vw;
+    cursor: pointer;
+    color: rgb(65, 61, 61);
+    font-weight: 600;
+    font-family: "Helvetica";
+    font-size: 80%;
+    background-color: rgba(245, 245, 245, 0.986);
+}

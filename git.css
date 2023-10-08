@@ -95,7 +95,7 @@ li{
     background-color: rgba(245, 245, 245, 0.986);
     border-radius: 16px;
     width: 40%;
-    height: 28%;
+    height: 20%;
     margin: 4%;
     display: flex;
     justify-content: space-around;
@@ -103,6 +103,7 @@ li{
     align-items: center;
     font-size: 12px;
     padding: 16px;
+    box-shadow: -2px 2px 2px 0px rgba(0,0,0,0.64);
 }
 
 h3{
@@ -133,6 +134,7 @@ h3{
         width: 56%;
         height: 56%;
         flex-direction: column;
+        overflow-y: scroll;
     }
 }
 
@@ -154,5 +156,6 @@ h3{
         width: 88%;
         height: 56%;
         flex-direction: column;
+        overflow-y: scroll;
     }
 }
